@@ -3,23 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Portfolio</title>
+    <title>Project Portfolio - Data Warehousing - WiSe 2025-2026</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
 
-    <style>
-        /* Minimalist Pastel Color Palette & Typography */
+    <style>   
         :root {
-            --bg-color: #f2fcf5; /* Very soft pastel green */
+            --bg-color: #f2fcf5;
             --card-bg: #ffffff;
-            --accent-blue: #d0e8f2; /* Soft pastel blue */
-            --accent-green: #a8e6cf; /* Vibrant pastel green */
+            --accent-blue: #d0e8f2;
+            --accent-green: #a8e6cf;
             --text-dark: #2d3748;
             --text-light: #4a5568;
         }
-
         body {
             font-family: 'Nunito', sans-serif;
             background-color: var(--bg-color);
@@ -29,13 +27,12 @@
             line-height: 1.6;
         }
 
-        /* Container to keep everything centered and readable */
+        /* Keeps content from stretching too wide */
         .container {
             max-width: 900px;
             margin: 0 auto;
         }
 
-        /* Cute Poster Font for Headers */
         h1, h2, h3 {
             font-family: 'Fredoka', sans-serif;
             color: var(--text-dark);
@@ -55,7 +52,6 @@
             margin-bottom: 40px;
         }
 
-        /* Clean Card Layout for Sections */
         .section-card {
             background-color: var(--card-bg);
             border-radius: 20px;
@@ -65,10 +61,10 @@
             border-top: 5px solid var(--accent-blue);
         }
 
-        /* Responsive Container for Tableau & YouTube */
+        /* Resize YT video on mobile */
         .embed-container {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
             border-radius: 12px;
@@ -86,12 +82,10 @@
             border: none;
         }
 
-        /* Special sizing for Tableau which might need more height */
         .tableau-container {
             padding-bottom: 75%; 
         }
 
-        /* Cute Button for PDF Download */
         .btn {
             display: inline-block;
             background-color: var(--accent-green);
@@ -106,7 +100,7 @@
             text-align: center;
             margin-top: 10px;
         }
-
+        
         .btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 15px rgba(168, 230, 207, 0.7);
@@ -116,19 +110,36 @@
             text-align: center;
             border-top: 5px solid var(--accent-green);
         }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--text-light);
+            text-decoration: none;
+            font-family: 'Fredoka', sans-serif;
+            font-size: 1.1rem;
+            transition: color 0.2s, transform 0.2s;
+        }
+
+        .back-link:hover {
+            color: var(--accent-green);
+            transform: translateX(-5px); 
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
         
+        <a href="../index.html" class="back-link">← Back to Portfolio Home</a>
+        
         <h1>European Airbnb Market Analysis</h1>
         <div class="subtitle">An End-to-End Data Warehousing & ETL Pipeline Project</div>
 
         <div class="section-card">
             <h2>Project Overview</h2>
-            <p>This project focuses on building a beginner ETL pipeline to process and visualize Airbnb data across major European markets. The goal was to transform raw, unstructured data into a clean, query-optimized data warehouse to uncover pricing trends and occupancy rates.</p>
-            <p><strong>Tools Used:</strong> SQL, Python, Tableau, and standard Data Warehousing architectures.</p>
+            <p>Hello there! :) This first-semester project focuses on building a beginner ETL pipeline to process and visualize Airbnb data across major European markets. The goal was to transform raw, unstructured data into a clean, query-optimized data warehouse to uncover pricing trends and occupancy rates.</p>
+            <p><strong>Tools Used:</strong> SQL, Python, Tableau, BigQuery</p>
         </div>
 
         <div class="section-card">
@@ -136,22 +147,20 @@
             <p>Explore the final visualizations below. You can filter by city, room type, and price range.</p>
             
             <div class="embed-container tableau-container">
-                <iframe src="<script type='module' src='https://dub01.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script><tableau-viz id='tableau-viz' src='https://dub01.online.tableau.com/t/bipm_dwh_2025/views/Final_Airbnb_DB_extracted/AirbnbMarketAnalysis' width='1024' height='808' hide-tabs toolbar='bottom' ></tableau-viz>" allowfullscreen></iframe>
+                <iframe src="https://public.tableau.com/views/AirbnbMarketAnalysisEuropeanCities/AirbnbMarketAnalysis?:showVizHome=no&:embed=true&:toolbar=no" allowfullscreen></iframe>
             </div>
-        </div>
-
-        <div class="section-card">
+        </div> <div class="section-card">
             <h2>Team Presentation</h2>
-            <p>Here is a walkthrough of our methodology, the challenges we faced during the data modeling phase, and our final business recommendations.</p>
+            <p>Here is a walkthrough of our methodology, the challenges we faced during the data modeling phase, and our final business questions answers (assignement criteria).</p>
             
             <div class="embed-container">
-                <iframe src="https://youtu.be/AEq2OMhV8sA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/AEq2OMhV8sA?si=Rbm7ZwJ9SuDzH-Qx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
 
         <div class="section-card pdf-section">
             <h2>Deep Dive Documentation</h2>
-            <p>Want to see the technical details, ER diagrams, and our step-by-step process?</p>
+            <p>Want to see the technical details, ER diagrams, and our step-by-step process in its entirety?</p>
             
             <a href="project_documentation.pdf" target="_blank" class="btn">View Full PDF Documentation</a>
         </div>
