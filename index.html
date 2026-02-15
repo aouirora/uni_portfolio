@@ -1,14 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Aurora's BI Portfolio</title>
-</head>
-<body style="font-family: Arial, sans-serif; text-align: center; margin-top: 50px;">
-    <h1>Business Intelligence & Process Management Portfolio</h1>
-    <p>Welcome! Here are the projects I have completed.</p>
-    <hr style="max-width: 500px;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora's BIPM Portfolio</title>
     
-    <h3>Project 1: Data Warehousing & ETL</h3>
-    <a href="data_warehousing_project/index.html">View European Airbnb Market Analysis</a>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Exact same Minimalist Pastel Color Palette */
+        :root {
+            --bg-color: #f2fcf5;
+            --card-bg: #ffffff;
+            --accent-blue: #d0e8f2;
+            --accent-green: #a8e6cf;
+            --text-dark: #2d3748;
+            --text-light: #4a5568;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 50px 20px;
+            line-height: 1.6;
+            text-align: center; /* Centers the main header texts */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1, h3 {
+            font-family: 'Fredoka', sans-serif;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        .intro-text {
+            color: var(--text-light);
+            font-size: 1.2rem;
+            margin-bottom: 50px;
+            padding: 0 20px;
+        }
+
+        /* Clean Card Layout for the Project Menu */
+        .project-card {
+            background-color: var(--card-bg);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.03);
+            border-top: 5px solid var(--accent-blue);
+            text-align: left; /* Keeps the card text readable left-to-right */
+            transition: transform 0.2s, box-shadow 0.2s, border-top-color 0.2s;
+        }
+
+        /* Makes the card lift up and change border color to green when hovered */
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.06);
+            border-top: 5px solid var(--accent-green); 
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+            font-size: 1.6rem;
+        }
+        
+        .project-card p {
+            color: var(--text-light);
+        }
+
+        /* Cute Button for the links */
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-green);
+            color: var(--text-dark);
+            font-family: 'Fredoka', sans-serif;
+            font-size: 1.1rem;
+            text-decoration: none;
+            padding: 10px 24px;
+            border-radius: 30px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(168, 230, 207, 0.6);
+        }
+        
+        /* Styling for the classes you haven't finished yet */
+        .coming-soon {
+            border-top-color: #e2e8f0; /* Grey top border */
+            opacity: 0.7; /* Makes it look slightly faded out */
+        }
+        .coming-soon:hover {
+            border-top-color: #e2e8f0;
+            transform: none;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.03);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <h1>Aurora's BI Portfolio</h1>
+        <p class="intro-text">Welcome! I am pursuing an MSc in Business Intelligence and Process Management. Here is a collection of my coursework and projects.</p>
+        
+        <div class="project-card">
+            <h3>Data Warehousing & ETL</h3>
+            <p>An end-to-end pipeline processing and visualizing Airbnb data for major European markets using SQL, Python, and Tableau.</p>
+            <a href="data_warehousing_project/index.html" class="btn">View Project Details →</a>
+        </div>
+
+        <div class="project-card coming-soon">
+            <h3>Data Science</h3>
+            <p><em>Project details and models coming soon...</em></p>
+            </div>
+
+        <div class="project-card coming-soon">
+            <h3>Business Process Management</h3>
+            <p><em>Process optimization and mapping details coming soon...</em></p>
+            </div>
+
+        <div class="project-card coming-soon">
+            <h3>Natural Language Processing Lab</h3>
+            <p><em>Coming soon...</em></p>
+            </div>
+        
+        <div class="project-card coming-soon">
+            <h3>Big Data and Enterprise Architecture</h3>
+            <p><em>Coming soon...</em></p>
+            </div>
+        
+
+    </div>
+
 </body>
 </html>
